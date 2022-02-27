@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.css"></link rel>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-left">
+                    <p>Rock</p>
+                    <p>Paper</p>
+                    <p>Scissors</p>
+                </div>
+                <div class="navbar-right">
+                    <button class="restart-button" onclick='reset()'>
+                        <p class="restart">Restart</p>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="game">
+            <div class="game-scoreboard">
+                <div>
+                    <p>YOU</p>
+                    <p id="user-score">SCORE: 0</p>
+                    <img src="./images/refresh.png" alt="selectionUSER" class="user-img" id="user-image">
+                </div>
+                <div>
+                    <p>CPU</p>
+                    <p id="cpu-score">SCORE: 0</p>
+                    <img src="./images/refresh.png" alt="selectionCPU" class="cpu-img" id="cpu-image">
+                </div>
+            </div>
+            <div class ="game-options">
+                <div>
+                    <button onclick='game(1)'><img src="./images/rock.PNG" alt="Rock" class="button-image"></button>
+                    <button onclick='game(2)'><img src="./images/paper.PNG" alt="Paper" class="button-image"></button>
+                    <button onclick='game(3)'><img src="./images/scissors.PNG" alt="Scissors" class="button-image"></button>
+                </div>
+            </div>
+            <div class="game-result">
+                <div>
+                    <p id="game-result-p">YOU WIN</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
